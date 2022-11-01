@@ -10,4 +10,15 @@ local Info = {
 
 -- Now here is the actual code, only edit if you know what you're doing!
 
-local serverScriptService = game:GetService("ServerScriptService")
+local lighting = game:GetService("Lighting");
+local replicatedStorage = game:GetService("ReplicatedStorage");
+local replicatedFirst = game:GetService("ReplicatedFirst");
+local serverStorage = game:GetService("serverStorage");
+local serverScriptService = game:GetService("ServerScriptService");
+local chat = game:GetService("Chat");
+local textChatService = game:GetService("TextChatService");
+local detectedChatMode = textChatService.ChatVersion -- 0 = Old, 1 = Current, 2 = Custom
+
+if detectedChatMode == 0 then
+  
+end
